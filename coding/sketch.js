@@ -16,7 +16,7 @@ function setup() {
 // 		circle(i*v,i*v1-o*3,5-o/15)
 	
 // }}
-	  angleMode(DEGREES);
+	angleMode(DEGREES);
 for(let i=0;i<=1000;i++){
 	fill(255,random(0,255))
 	circle(random(width),random(height),random(0,5))
@@ -28,8 +28,8 @@ for(let i=0;i<=1000;i++){
 	// noStroke()
 		push()
   // circle(0, 0, 700);
-  fill(255,50)
-  for (let j = 1; j < 100; j++) {
+fill(255,50)
+for (let j = 1; j < 100; j++) {
     for (let i = 0; i < 360; i += j / 20) {
       let dianR = map(j, 1, 100, 468 / 2, 200 / 2); // 半径范围从大到小
       let r = random(dianR - 5, 468/2);             // 稍微随机一下半径
@@ -55,7 +55,7 @@ for(let i=0;i<=1000;i++){
 			for(let i=0;i<6;i++){
 		let b =random(0,35)
 	push()
-	 strokeWeight(1)
+	strokeWeight(1)
 
 	let x1 = cos(degree*j- 67.5-i*random(3))*yuanshiR/3+0
 		let y1 = sin(degree*j- 67.5-i*random(3))*yuanshiR/3+0
@@ -68,7 +68,7 @@ for(let i=0;i<=1000;i++){
 			for(let i=0;i<6;i++){
 		let c = map(i,0,5,50,25)
 	push()
-	 noStroke()
+	noStroke()
 		fill(255)
 
 	let x1 = cos(j*3)*yuanshiR/1.3*(4-i/10)+0
@@ -149,11 +149,11 @@ function lineCircle(lineCircleX,lineCircleY,lineCircleR,lineCircleSize){
 		let lineCircleX2 = sin(j)*lineCircleR/2+lineCircleY;
 
 	if (random() > 0.0176) {
-  fill(255);
-  circle(lineCircleX1, lineCircleX2, lineCircleSize);
+fill(255);
+circle(lineCircleX1, lineCircleX2, lineCircleSize);
 } else {
   // moon(lineCircleX1, lineCircleX2, random(lineCircleSize*10,lineCircleSize*20));
- circle(lineCircleX1, lineCircleX2, random(lineCircleSize*5,lineCircleSize*10));
+circle(lineCircleX1, lineCircleX2, random(lineCircleSize*5,lineCircleSize*10));
 }
 	}
 }
@@ -192,17 +192,17 @@ function sanjiaoxin(sx,sy,sr,d){
 
 	push()
 	lineCircle(sx,sy,sr,1)
-	 	pop()
+	pop()
 
 		beginShape()
- for(let j=0;j<4;j++){
+for(let j=0;j<4;j++){
 		let sx1 = cos(120*j-d)*(sr/2)+sx;
 		let sy1 = sin(120*j-d)*(sr/2)+sy;
-	 vertex(sx1,sy1)
-	 push()
-	 fill(255)
-	 circle(sx1,sy1,random(10,50))
-	 pop()
+	vertex(sx1,sy1)
+    push()
+	fill(255)
+	circle(sx1,sy1,random(10,50))
+	pop()
 // 	 if(d>0&j==0){
 // 	 push()
 // 		 noStroke()
